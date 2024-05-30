@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Google Search Engine Meta -->
+    <meta
+      name="google-site-verification"
+      content="v-8Ouqd_QOR65ES3onPIrx8KWMY_YBGJ5M5Sj5In0zI"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Sədi Məmmədov Front-End Developer</title>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        position: relative;
+      }
+
+      canvas {
+        display: block;
+      }
+
+      /* ---- particles.js container ---- */
+      #particles-js {
+        width: 100%;
+        height: 100vh;
+
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+      }
+
+      /* ---- stats.js ---- */
+      .count-particles {
+        background: #000022;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        width: 80px;
+        color: #13e8e9;
+        font-size: 0.8em;
+        text-align: left;
+        text-indent: 4px;
+        line-height: 14px;
+        padding-bottom: 2px;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: bold;
+      }
+
+      .js-count-particles {
+        font-size: 1.1em;
+      }
+
+      #stats,
+      .count-particles {
+        -webkit-user-select: none;
+        user-select: none;
+        margin-top: 5px;
+        margin-left: 5px;
+      }
+
+      #stats {
+        border-radius: 3px 3px 0 0;
+        overflow: hidden;
+      }
+
+      .count-particles {
+        border-radius: 0 0 3px 3px;
+      }
+    </style>
+  </head>
+
+  <body
+    data-spy="scroll"
+    data-target="#navigation"
+    data-offset="10"
+    class="position-relative"
+  >
+    <!-- particles.js container -->
+    <div id="particles-js" class="bg-dark position-relative w-100">
+      <div class="container-fluid position-absolute w-100">
+        <div class="row py-4 mt-5 w-100">
+          <h1 class="col-sm-12 text-light text-center my-5 mt-5 py-5 w-100">
+            Xoş Gəldin. Mən <span class="text-secondary">Sədi Məmmədov</span>.
+            Front End Developer'əm
+          </h1>
+
+          <div class="col-sm-12 text-center">
+            <a
+              class="btn btn-transparent btn-outline-light border px-4 py-3 text-decoration-none rounded"
+              href="#aboutMe"
+              >Haqqımda</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav
+      id="navigation"
+      class="navbar navbar-expand-lg navbar-dark bg-primary px-3 py-2 sticky-top"
+    >
+      <a class="navbar-brand" href="#">S.M</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navigation"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto text-uppercase">
+          <li class="nav-item">
+            <a class="nav-link active" href="#particles-js">Başlanğıc</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutMe">Haqqımda</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#myProjects">Portfolio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Əlaqə</a>
+          </li>
+
+          <!-- <li class="nav-item">
+              <a class="nav-link ">Disabled</a>
+            </li> -->
+        </ul>
+      </div>
+    </nav>
+
+    <section id="aboutMe" class="container-fluid bg-light">
+      <div class="row">
+        <h2
+          class="text-dark col-sm-12 text-center display-4 border-bottom py-5"
+        >
+          Haqqımda
+        </h2>
+
+        <div class="col-sm-6 col-md-3">
+          <div
+            class="d-flex px-2 align-content-center justify-content-center"
+            style="font-size: 64px"
+          >
+            <i
+              style="width: 150px; height: 150px"
+              class="d-flex align-content-center justify-content-center align-items-center rounded-circle bg-primary text-white text-center fas fa-tachometer-alt"
+            ></i>
+          </div>
+          <h4 class="col-sm-12 text-center py-2">Sürətli</h4>
+
+          <p class="text-center">
+            Sürətli yükləmə müddətləri və gecikməsiz qarşılıqlı əlaqə, mənim ən
+            yüksək prioritetim.
+          </p>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div
+            class="d-flex px-2 align-content-center justify-content-center"
+            style="font-size: 64px"
+          >
+            <i
+              style="width: 155px; height: 150px"
+              class="d-flex align-content-center justify-content-center align-items-center rounded-circle bg-primary text-white text-center fas fa-mobile-alt"
+            ></i>
+          </div>
+          <h4 class="col-sm-12 text-center py-2">Responsive</h4>
+
+          <p class="text-center">
+            Mənim üçün ekran ölçüsünün heç bir fərqi yoxdur, kiçik ya da böyük
+            olmasından asılı olmayaraq
+          </p>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div
+            class="d-flex px-2 align-content-center justify-content-center"
+            style="font-size: 64px"
+          >
+            <i
+              style="width: 155px; height: 150px"
+              class="d-flex align-content-center justify-content-center align-items-center rounded-circle bg-primary text-white text-center far fa-lightbulb"
+            ></i>
+          </div>
+          <h4 class="col-sm-12 text-center py-2">Yaradıcı</h4>
+
+          <p class="text-center">
+            UI dizaynlarını ən trend olan dizaynlara görə hazırlayıram.
+          </p>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div
+            class="d-flex px-2 align-content-center justify-content-center"
+            style="font-size: 64px"
+          >
+            <i
+              style="width: 155px; height: 150px"
+              class="d-flex align-content-center justify-content-center align-items-center rounded-circle bg-primary text-white text-center fas fa-rocket"
+            ></i>
+          </div>
+          <h4 class="col-sm-12 text-center py-2">Dinamik</h4>
+
+          <p class="text-center">
+            Veb saytlarımın heç biri statik deyil... Mən dinamik dizaynı
+            xoşlayıram
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div
+            class="px-5 mx-5 d-flex justify-content-center align-items-center"
+          >
+            <img
+              class="rounded"
+              src="/media/photo.webp"
+              width="300px"
+              height="300px"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <span class="mt-1">HTML</span>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+              role="progressbar"
+              aria-valuenow="90"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="width: 95%"
+            ></div>
+          </div>
+          <span class="mt-1">CSS</span>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+              role="progressbar"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="width: 90%"
+            ></div>
+          </div>
+
+          <span>JavaScript</span>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+              role="progressbar"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="width: 80%"
+            ></div>
+          </div>
+
+          <span>Jquery</span>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+              role="progressbar"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="width: 75%"
+            ></div>
+          </div>
+
+          <span>React</span>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+              role="progressbar"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="width: 35%"
+            ></div>
+          </div>
+
+          <span>Bootstrap</span>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+              role="progressbar"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="width: 85%"
+            ></div>
+          </div>
+
+          <span>GIT</span>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+              role="progressbar"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="width: 90%"
+            ></div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 text-center">
+          <h2 class="text-dark col-sm-12 text-center display-4 py-5">
+            Mən kiməm ?
+          </h2>
+          <p>
+            Mən Azərbaycanda, Bakı şəhərində yaşayan və işləyən bir Front-End
+            proqramçıyam. Uİ effekt və animasiyalarına ciddi marağım var və
+            hətta kreativ, dinamik interfeyslər yaratmaq həvəskarıyam. Yeni
+            effekt və animasiyalar yaratmaqda ciddi və təşəbbüskaram...
+            <a href="#contact">Gəl yeni və maraqlı birşey hazırlayaq</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="myProjects" class="container-fluid bg-white">
+      <div class="row">
+        <h2 class="text-dark col-sm-12 text-center display-4 py-5">
+          Proyektlərim
+        </h2>
+
+        <div class="col-sm-6 text-center">
+          <div id="carousel-0" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="/media/tibis-img.webp"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/media/tibis-img-1.webp"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carousel-0"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carousel-0"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <h4>Tibis.Az</h4>
+          <p>Tibis xəstəxana idarə etmə sistemi proqramının rəsmi veb saytı</p>
+        </div>
+
+        <div class="col-sm-6 text-center">
+          <div id="carousel-1" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="/media/tibis-login.webp"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/media/tibis-app.webp"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carousel-1"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carousel-1"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <h4>Tibis Medical İnformation System</h4>
+          <p>
+            Tibis xəstəxana idarə etmə sistemi proqramının interfeysi və mənim
+            yenidən dizayn etdiyim istifadəçi interfeysi
+          </p>
+        </div>
+
+        <div class="col-sm-6 text-center">
+          <div id="carousel-2" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/media/kassa.webp" class="img-fluid rounded" alt="" />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/media/kassa-1.webp"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/media/kassa-2.webp"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carousel-2"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carousel-2"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <h4>Kassa Application System (Beta)</h4>
+          <p>
+            Online alışveriş və ya kiçik sahibkarlıq ilə məşğul olan insanlar
+            üçün sadə, ucuz və çox funksiyalı proqram
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container-fluid bg-dark text-white">
+      <div class="row">
+        <h2 class="text-info col-sm-12 text-center display-4 py-5">Əlaqə</h2>
+        <p class="text-secondary col-sm-12 text-center">
+          Sualın var və ya birlikdə işləmək istəyirsən?
+        </p>
+
+        <form class="offset-md-4 col-sm-4" action="">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control my-2 bg-info text-dark"
+              name=""
+              id=""
+              aria-describedby="helpId"
+              placeholder="Adınız"
+            />
+            <input
+              type="text"
+              class="form-control my-2 bg-info text-dark"
+              name=""
+              id=""
+              aria-describedby="helpId"
+              placeholder="Mailiniz"
+            />
+            <textarea
+              class="form-control my-2 bg-info text-dark"
+              name=""
+              id=""
+              rows="3"
+              placeholder="Mesajınız"
+            ></textarea>
+            <button
+              type="submit"
+              class="btn btn-transparent btn-outline-light offset-md-4 col-sm-4"
+            >
+              Göndər
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="footer" class="container-fluid bg-dark pb-1">
+      <div
+        class="d-flex justify-content-between flex-md-column flex-lg-row col-sm-2 offset-md-5 text-white"
+      >
+        <div
+          class="d-flex justify-content-center btn btn-outline-light"
+          style="font-size: 32px"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </div>
+
+        <div
+          class="d-flex justify-content-center btn btn-outline-light"
+          style="font-size: 32px"
+        >
+          <i class="fab fa-instagram"></i>
+        </div>
+
+        <div
+          class="d-flex justify-content-center btn btn-outline-light"
+          style="font-size: 32px"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+
+      <p class="text-info text-center pt-3">
+        © 2022 <span class="text-secondary">Sədi Məmmədov</span> .
+      </p>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <!-- <script src="/js/jquery-3.6.0.min.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <!-- particles -->
+    <script src="./js/particles.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
